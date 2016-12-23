@@ -1,0 +1,42 @@
+#animatie {
+    width: 200px;
+    height: 200px;
+    padding-left: 50px;
+    padding-top: 20px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    animation-name: animatie;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate
+}
+
+@keyframes animatie {
+    0% {
+        left: 0px;
+        top: 0px;
+        background-color: black;
+    }
+    25% {
+        left: calc(100% - 200px);
+        top: 0px;
+        background-color:green;
+    }
+    50% {
+        left: calc(100% - 200px);
+        top: calc(100% - 200px);
+        background-color: red;
+    }
+    75% {
+        left: 0px;
+        top: calc(100% - 200px);
+        background-color: blue;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+        background-color: greenyellow;
+    }
+}
